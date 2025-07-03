@@ -5,11 +5,26 @@
   <title>3D Revit Model</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
-    body { margin: 0; background: #111; }
-    model-viewer { width: 100vw; height: 100vh; }
+    body {
+      margin: 0;
+      background: white; /* Set page background to white */
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
   </style>
 </head>
 <body>
-  <model-viewer src="Beallo.glb" camera-controls auto-rotate background-color="#ffffff"></model-viewer>
+  <model-viewer 
+    src="Beallo.glb" 
+    camera-controls 
+    auto-rotate 
+    background-color="#ffffff"   <!-- background inside the viewer -->
+    exposure="1"
+    environment-image="neutral"
+    shadow-intensity="0.5"
+    style="--model-color: gray;">
+  </model-viewer>
 </body>
 </html>
