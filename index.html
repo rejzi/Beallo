@@ -7,11 +7,12 @@
   <style>
     body {
       margin: 0;
-      background: white; /* Set page background to white */
+      background: white; /* Page background */
     }
     model-viewer {
       width: 100vw;
       height: 100vh;
+      --model-color: #333333; /* Dark gray */
     }
   </style>
 </head>
@@ -20,11 +21,10 @@
     src="Beallo.glb" 
     camera-controls 
     auto-rotate 
-    background-color="#ffffff"   <!-- background inside the viewer -->
+    background-color="#ffffff" 
     exposure="1"
     environment-image="neutral"
-    shadow-intensity="0.5"
-    style="--model-color: gray;">
+    shadow-intensity="0.4">
   </model-viewer>
 </body>
 </html>
